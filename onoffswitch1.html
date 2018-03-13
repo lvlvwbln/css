@@ -1,0 +1,91 @@
+<html>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <style>
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+}
+
+/* hide checkbox - will be styled later*/
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.container {
+  width: 798px;
+  height: 598px;
+  background-color: #F3E5D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox {
+  width: 320px;
+  height: 180px;
+  background-color:  #FEFDFF;
+  border-radius: 90px;
+  position: relative;
+}
+
+.checkbox label::before {
+  font-family: "FontAwesome";
+  /* content: "\f00c"; */
+  content: "\f00d";
+  display: inline-block;
+  font-size: 7em;
+  position: absolute;
+  left: 25px;
+  color: #FEFDFF;
+}
+
+.checkbox label::after {
+  font-family: "FontAwesome";
+  content: "\f00c";
+  display: inline-block;
+  font-size: 7em;
+  position: relative;
+  /* color: #FEFDFF; */
+  color: black;
+  left: 160px;
+}
+
+.checkbox label {
+  display: block;
+  width: 144px;
+  height: 134px;
+  background-color: #F3E5D3;
+  border-radius: 67px;
+
+  /* vertical centering */
+  position: absolute;
+  top: 50%;
+  margin-top: -67px;
+  /* end of vertical centering */
+
+  left: 20px;
+
+  transition-property: left;
+  transition-duration: 700ms;
+  cursor: pointer;
+}
+
+.checkbox input[type="checkbox"]:checked + label {
+  background:  #7E86F9;
+  left: 160px;
+
+  /*transform: rotate(180deg);*/
+}
+  </style>
+  <body>
+    <div class="container">
+      <div class="checkbox">
+        <input type="checkbox" value="1" id="checkboxInput">
+        <label for="checkboxInput"></label>
+      </div>
+    </div>
+  </body>
+</html>
