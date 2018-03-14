@@ -34,7 +34,8 @@ input[type="checkbox"] {
 .checkbox label::before {
   font-family: "FontAwesome";
   /* content: "\f00c"; */
-  content: "\f00d";
+  /* content: "\f00d";*/
+  content: attr(data-before);
   display: inline-block;
   font-size: 7em;
   position: absolute;
@@ -44,7 +45,8 @@ input[type="checkbox"] {
 
 .checkbox label::after {
   font-family: "FontAwesome";
-  content: "\f00c";
+  /*content: "\f00c";*/
+  content: attr(data-after);
   display: inline-block;
   font-size: 7em;
   position: relative;
@@ -84,8 +86,11 @@ input[type="checkbox"] {
     <div class="container">
       <div class="checkbox">
         <input type="checkbox" value="1" id="checkboxInput">
-        <label for="checkboxInput"></label>
+        <label class="foo" for="checkboxInput" data-before="" data-after=""></label>
       </div>
     </div>
+    <script>
+      alert('foobar');
+    </script>
   </body>
 </html>
