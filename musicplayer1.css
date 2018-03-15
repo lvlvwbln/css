@@ -7,6 +7,13 @@
 	--outer-container-height: 600px;
 }
 
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 body {
 	background: #ffffff;
 }
@@ -32,4 +39,63 @@ body {
 
 .container .iplay {
 	margin-right: 52px;
+}
+
+.container .channel-list .channel {
+	height: calc(var(--inner-container-height) / 9);
+	border-bottom: 1px solid lightgrey;
+	padding-left: 15px;
+	padding-top: 15px;
+	position: relative;
+}
+
+.container .channel-list .channel:nth-child(3) .channel-title {
+	color: #fe5c8b;
+}
+
+.container .channel-list .channel:nth-child(3) .channel-music {
+	color: #fcbfce;
+	font-weight: bold;
+}
+
+.container .channel-list .channel:nth-child(3) .channel-plays {
+	color: #fcbfce;
+	font-weight: bold;
+}
+
+.container .channel-list .channel .close-img {
+	background-image: url('close-img.png');
+	width: 25px;
+	height: 25px;
+	float: left;
+}
+
+.container .channel-list .channel .channel-list-header {
+	color: #7a608d;
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	margin-top: 3px;
+	margin-left: 60px;
+}
+
+.container .channel-list .channel .channel-title {
+	color: #7a608d;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.container .channel-list .channel .channel-music {
+	color: #e1dee7;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.container .channel-list .channel .channel-plays {
+	color: #e1dee7;
+	font-size: 10px;
+	position: absolute;
+	right: 15px;
+	float: right;
+	top: 20px;
 }
