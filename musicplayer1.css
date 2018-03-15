@@ -1,0 +1,35 @@
+:root {
+	--inner-container-width: 286px;
+	--inner-container-height: 508px;
+	--inner-container-bg-color: #ffffff;
+	--outer-container-bg-color: #97ade7;
+	--outer-container-width: 800px;
+	--outer-container-height: 600px;
+}
+
+body {
+	background: #ffffff;
+}
+
+.container {
+	width: var(--outer-container-width);
+	height: var(--outer-container-height);
+	background: var(--outer-container-bg-color);
+	display: flex;
+	margin: auto; /* centering container within body*/
+
+	/* centering child items of the flex container */
+	justify-content: center;
+	align-items: center;
+}
+
+.inner-container {
+	width: var(--inner-container-width);
+	height: var(--inner-container-height);
+	background: var(--inner-container-bg-color);
+	border-radius: 2px;
+}
+
+.container .iplay {
+	margin-right: 52px;
+}
