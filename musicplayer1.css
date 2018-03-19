@@ -1,3 +1,5 @@
+/* https://dribbble.com/shots/2899238-app-radio3 */
+
 :root {
 	--inner-container-width: 286px;
 	--inner-container-height: 508px;
@@ -39,6 +41,151 @@ body {
 
 .container .iplay {
 	margin-right: 52px;
+}
+
+.container .iplay .top-menu {
+	height: 82px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*background-color: orange;*/
+	margin-left: 18px;
+	margin-right: 10px;
+}
+
+.container .iplay .top-menu .back-icon {
+	background-image: url('back.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	flex-basis: 20px;
+	height: 30px;
+	/*background-color: pink;*/
+}
+
+.container .iplay .top-menu .plays-icon {
+	background-image: url('play.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	flex-basis: 40px;
+	height: 38px;
+	/*background-color: red;*/
+}
+
+.container .iplay .top-menu .player-header {
+	flex-basis: 172px;
+	text-align: center;
+	color: #7a608d;
+	/*background-color: lightgreen;*/
+}
+
+.container .iplay .top-menu .player-header .header {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.container .iplay .top-menu .player-header .subheader {
+	margin-top: 0;
+	font-size: 10px;
+}
+
+.container .iplay .middle-img {
+	background-image: url('main-img.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 275px;
+}
+
+.container .iplay .play-menu {
+	height: 65px;
+}
+
+.container .iplay .play-menu .backward {
+	background-image: url('previous.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin-left: 42px;
+	margin-top: 15px;
+}
+
+.container .iplay .play-menu .play-btn {
+	background-image: url('play2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-left: 56px;
+	margin-top: 10px;
+}
+
+.container .iplay .play-menu .forward {
+	background-image: url('next.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin-left: 46px;
+	margin-top: 15px;
+}
+
+.container .iplay .vol-menu {
+	/*background: green;*/
+	height: 42px;
+	background-image: url('volume.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container .iplay .social-menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 10px;
+}
+
+.container .iplay .social-menu .hamburguer {
+	background-image: url('hamburguer.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 25px;
+	height: 25px;
+}
+
+.container .iplay .social-menu .like {
+	background-image: url('heart.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 25px;
+	height: 25px;
+}
+
+.container .iplay .social-menu .download {
+	background-image: url('download.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 25px;
+	height: 25px;
+}
+
+.container .iplay .social-menu .share {
+	background-image: url('share.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 25px;
+	height: 25px;
+}
+
+.container .iplay .social-menu .notifications {
+	background-image: url('msgs.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 25px;
+	height: 25px;
 }
 
 .container .channel-list .channel {
