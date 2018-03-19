@@ -116,27 +116,22 @@ html {
 }
 
 .main-container .right-container .right-container-bottom .passenger {
-	background: lightgreen;
 	flex-basis: auto;
 }
 
 .main-container .right-container .right-container-bottom .flight {
-	background: lightpink;
 	flex-basis: auto;
 }
 
 .main-container .right-container .right-container-bottom .gate {
-	background: orange;
 	flex-basis: auto;
 }
 
 .main-container .right-container .right-container-bottom .seat {
-	background: purple;
 	flex-basis: auto;
 }
 
 .main-container .right-container .right-container-bottom .terminal {
-	background: red;
 	flex-basis: auto;
 }
 
