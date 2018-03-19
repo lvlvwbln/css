@@ -1,0 +1,48 @@
+:root {
+	--main-container-bg-color: #FEDDA8;
+	--left-container-bg-color: #2C2B2B;
+	--right-container-bg-color: #FFFFFF;
+	--main-container-width: 550px;
+	--main-container-height: 170px;
+	--left-container-width: 164px;
+	--left-container-height: 100%;
+	--right-container-width: calc(var(--main-container-width) - var(--left-container-width));
+	--right-container-height: 100%;
+}
+
+html {
+	box-sizing: border-box;
+	background-color: var(--main-container-bg-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%; // otherwise align-items does not center vertically
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.main-container {
+	width: var(--main-container-width);
+	height: var(--main-container-height);
+	display: flex;
+}
+
+.main-container .left-container {
+	/*width: var(--left-container-width);*/
+	/*height: var(--left-container-height);*/
+	background-color: var(--left-container-bg-color);
+	flex-basis: var(--left-container-width);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.main-container .right-container {
+	/*width: var(--right-container-width);*/
+	/*height: var(--right-container-height);*/
+	background-color: var(--right-container-bg-color);
+	flex-basis: var(--right-container-width);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
