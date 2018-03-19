@@ -69,7 +69,7 @@ html {
 
 .main-container .rectangles {
 	position: absolute;
-	left: 162px;
+	left: 156px;
 }
 
 .main-container .rectangles .rectangle {
@@ -90,9 +90,46 @@ html {
 	background-image: url('boarding-pass-qrcode.png');
 	background-repeat: no-repeat;
 	background-position: center;
+
+	/* vertical and horizontal centering */
 	position: absolute;
 	top: 50%;
 	left: 50%;
-
 	margin: -60px 0 0 -60px;
+}
+
+.main-container .right-container {
+	padding-left: 36px;
+	padding-right: 36px;
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+
+.main-container .right-container .right-container-top {
+	display: flex;
+}
+
+.main-container .right-container .right-container-top .airplane-img {
+	background-image: url('boarding-pass-airplane.png');
+	width: 100px;
+	height: 20px;
+	margin-top: 15px;
+}
+
+.main-container .right-container .right-container-top .airport-name {
+	width: 100px;
+	height: auto;
+	font-size: 38px;
+	font-weight: bold;
+	color: #2C2B2B;
+	text-align: center;
+}
+
+.main-container .right-container .right-container-top .flight-time {
+	width: 110px;
+	height: auto;
+	font-size: 11px;
+	text-align: center;
+	color: lightgrey;
+	font-weight: bold;
 }
