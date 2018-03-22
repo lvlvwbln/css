@@ -1,0 +1,87 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: #ffd6d8;
+	position: relative;
+}
+
+.main-container {
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* top right bottom left */
+	margin: 250px -250px 250px -250px;
+}
+
+.back-container {
+	width: 482px;
+	height: 305px;
+	background-color: #444b3f;
+	font-size: 12px;
+	display: flex;
+	position: relative;
+	left: 58px;
+}
+
+.back-container .item {
+	flex-basis: calc(482px / 3);
+	height: 60px;
+	line-height: 60px;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #444b3f;
+	color: #959c9d;
+	border-right: 1px solid grey;
+}
+
+.back-container .item-selected {
+	background-color: #272727;
+	color: #fffded;
+}
+
+.front-container {
+	width: 600px;
+	height: 230px;
+	background-color: #b94d59;
+	position: relative;
+	top: -245px;
+	z-index: 1;
+	display: flex;
+}
+
+.front-container .left-container {
+	width: calc(600px - 60px);
+	background: green;
+}
+
+.front-container .left-container .line {
+	width: 484px;
+	height: 84px;
+	background: blue;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+}
+
+.front-container .left-container .line-1 {
+
+}
+
+.front-container .left-container .line-2 {
+
+}
+
+.front-container .right-container {
+	background-color: #d74882;
+	width: 60px;
+}
